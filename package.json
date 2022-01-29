@@ -1,0 +1,17 @@
+{
+  "name": "node_stream",
+  "version": "1.0.0",
+  "description": "",
+  "main": "buffer.js",
+  "scripts": {
+    "start": "node server",
+    "dev": "nodemon server"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.2",
+    "nodemon": "^2.0.15"
+  }
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color:rgb(89, 212, 212);
+        }
+        h1{
+            text-align: center;
+            color:white;
+            font-size:3em;
+        }
+        h2{
+            text-align: center;
+            color:white;
+            font-size:3em;
+        }
+        p{
+            text-align: center;
+            color:white;
+            font-size:1.5em;
+        }
+        li{
+            font-size:1.5em;
+            text-align: center;
+            color:white;
+        }
+    </style>
+</head>
+<body>
+    <%- include ('partials/nav.ejs') %>
+    <h1>Welcome to profile of <%= person %></h1>
+    <p>Age:<%= data.age %> </p>
+    <p>Job:<%= data.job %> </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+         Culpa vitae iure cupiditate, cumque iusto quam optio. Nihil mollitia veniam culpa voluptas porro. Sit,
+          consequatur accusantium.</p>
+    <h2>Hobbies</h2>
+        <ul>
+            <% data.hobbies.forEach(function(item){ %>
+                <li>
+                    <%= item %>
+                </li>
+           <% }) %>
+        </ul>
+    
+</body>
+</html>
